@@ -8,23 +8,44 @@
     <script defer src="script.js"></script>
   </head>
   <body>
-    <section class="section-heading">
-      <div class="game-name">
-        <h1>Rock</h1>
-        <h1>Paper</h1>
-        <h1>Scissors</h1>
+    <section class="section-game">
+      <div class="game-choices">
+        <div id="rock" class="game-box">
+          <img  src="images/rock-1.png" alt="rock img" class="game-img">
+        </div>
+        <div id="paper" class="game-box">
+          <img  src="images/paper-2.png" alt="paper img" class="game-img">
+        </div>
+        <div id="scissors" class="game-box">
+          <img  src="images/scissors-3.png" alt="scissors img" class="game-img">
+        </div>
       </div>
-      <div class="game-score">
-        <h2>SCORE</h2>
-        <p>Player: <span>10</span></p>
-        <p>Computer: <span>10</span></p>
-        <p>Tie: <span>1</span></p>
-
-        
+<!-- SCORE-RESET SECTION -->
+      <div>
+        <div class="score-reset">
+          <div class="game-score">
+            <h2>SCORE</h2>
+            <p>Player: <span class="playerScore">0</span></p>
+            <p>Computer: <span class="computerScore">0</span></p>
+            <p>Tie: <span class="tie">0</span></p>
+          </div>
+        <div class="reset">
+        <button class="reset-btn">reset</button>
+      </div>
+    </div>
+  </div>
+<!-- RESULT BOX -->
+      <div class="result-box">
+        <div class="player">
+          <h2>Player Choice</h2>
+          <p class="choice-box"><span class="player-choice"></span></p>
+        </div>
+        <div class="computer">
+          <h2>Computer Choice</h2>
+          <p class="choice-box"><span class="computer-choice"></span></p>
+          <span class="result"></span>
+        </div>
       </div>
     </section>
-    <section class="section-gameArea"></section>
-    <a href="https://www.wikihow.com/Play-Rock,-Paper,-Scissors" target="_blank">Rules</a>
-    
   </body>
-  </html>
+</html>
