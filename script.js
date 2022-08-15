@@ -127,7 +127,10 @@ resetBtn.addEventListener("click", function(e) {
 	playerChoice.textContent = " ";
 	computerChoose.textContent = " ";
 	result.textContent = " ";
-	playerScoreContent.textContent = "0";
-	computerScoreContent.textContent = "0";
-	tieContent.textContent = "0";
+	playerScoreContent.textContent = "";
+	computerScoreContent.textContent = "";
+	tieContent.textContent = "";
+	playerScore = 0;
+	computerScore = 0;
+	tie = 0;
 });
